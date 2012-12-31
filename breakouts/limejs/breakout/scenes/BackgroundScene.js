@@ -16,6 +16,7 @@ goog.inherits(breakout.scenes.BackgroundScene, lime.Scene);
 
 goog.object.extend(breakout.scenes.BackgroundScene.prototype, {
 	_loadBg: function() {
+		return;
 		var tmx = new lime.parser.TMX('media/bg.tmx');
 
 		for(var t = 0; t < tmx.layers[0].tiles.length; ++t) {
